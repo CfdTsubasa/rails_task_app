@@ -1,0 +1,151 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+}
+.partial{
+  padding-left: 0.5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #c52f24;
+  color: #fff;
+}
+
+table{
+  margin: 40px;
+}
+
+table tr {
+  text-align:center;
+}
+
+table th {
+  width: 160px;
+  padding: 10px;
+}
+
+table td {
+  width: 320px;
+  padding: 3px 10px;
+}
+
+input[type="text"],input[type="datetime-local"] {
+  height: 30px;
+  width: 400px;
+}
+
+textarea {
+  height: 80px;
+  width: 400px;
+}
+
+.btn-upd{
+  background-color: #c52f24;
+  color: #fff;
+  border: none;
+  margin-left: 410px;
+  margin-top: -50px;
+  margin-bottom: 30px;
+  width: 130px;
+  height: 40px;
+}
+.btn-link {
+  text-decoration: none;
+  background-color: #c52f24;
+  color: #fff;
+  border: none;
+  margin-left: 1110px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  width: 330px;
+  height: 40px;
+}
+
+.btn-index{
+  text-decoration: none;
+  background-color: #c52f24;
+  color: #fff;
+  border: none;
+  margin-bottom: 30px;
+  margin-left: 410px;
+  margin-top: 3px;
+  padding: 13px 20px;
+  width: 330px;
+  height: 40px;
+}
+.btn-show{
+  text-decoration: none;
+  background-color: #c52f24;
+  color: #fff;
+  border: none;
+  margin-bottom: 130px;
+  margin-left: 600px;
+  margin-top: 3px;
+  padding: 13px 20px;
+  width: 330px;
+  height: 40px;
+}
+.btn-add{
+  text-decoration: none;
+  background-color: #c52f24;
+  color: #fff;
+  border: none;
+  margin-bottom: 30px;
+  margin-left: 410px;
+  margin-top: 3px;
+  width: 130px;
+  height: 40px;
+}
+.btn-delete {
+  text-decoration: none;
+  background-color: #c52f24;
+  color: #fff;
+  border: none;
+  margin-bottom: 130px;
+  margin-left: 20px;
+  margin-top: 3px;
+  padding: 13px 20px;
+  width: 330px;
+  height: 40px;
+}
+
+.btn-edit {
+  text-decoration: none;
+  background-color: #c52f24;
+  color: #fff;
+  border: none;
+  margin-bottom: 130px;
+  margin-left: 20px;
+  margin-top: 3px;
+  padding: 13px 20px;
+  width: 330px;
+  height: 40px;
+}
+
+.btn-edit-detail {
+  text-decoration: none;
+  background-color: #c52f24;
+  color: #fff;
+  border: none;
+  margin-bottom: 130px;
+  margin-left: 20px;
+  margin-top: 3px;
+  padding: 13px 20px;
+  width: 330px;
+  height: 40px;
+}
+
+.nav{
+  display: flex;
+}
+
+#error_explanation {
+  color: red;
+
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
