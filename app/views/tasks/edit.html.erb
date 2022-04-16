@@ -1,0 +1,35 @@
+<h1>スケジュール更新</h1>
+
+<div class="row text-center">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with(model: @task, local: true) do |f| %>
+    <%= render 'shared/error_messages' %>
+      <table>
+        <tbody>
+          <tr>
+              <th>タイトル</th>
+              <td><%= f.text_field :title %></td>
+          </tr>
+          <tr>
+              <th>開始日時</th>
+              <td><%= f.datetime_field :start_date %></td>
+          </tr>
+          <tr>
+              <th>終了日時</th>
+              <td><%= f.datetime_field :end_date %></td>
+          </tr>
+          <tr>
+              <th>終日</th>
+              <td><%= f.check_box :all_day %><span style="margin-left:7px;">※一日中の場合チェックを入れてください</span></td>
+          </tr>
+          <tr>
+              <th>スケジュールメモ</th>
+              <td><%= f.text_area :memo %></td>
+          </tr>
+        </tbody>
+      </table>
+      <%= f.submit "更新", class: "btn-upd" %>
+    <% end %>
+      <%= link_to "スケジュール一覧へ",tasks_path,:class=>"btn-index" %>
+  </div>
+</div>

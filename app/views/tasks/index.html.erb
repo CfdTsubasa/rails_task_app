@@ -1,0 +1,21 @@
+<h1>スケジュール一覧</h1>
+<%= link_to "新規作成",new_task_path,:class=>"btn-link" %>
+<table>
+  <tbody>
+    <tr>
+      <th>タイトル</th><th>開始日時</th><th>終了日時</th><th>終日</th><th>更新日時</th>
+    </tr>
+    <% @tasks.each do |task| %>
+    <tr style="">
+      <td><%= task.title %></td>
+      <td><%= task.start_date.strftime("%Y-%m-%d %H:%M:%S") %></td>
+      <td><%= task.end_date.strftime("%Y-%m-%d %H:%M:%S") %></td>
+      <td><%= task.all_day ? '○':'×' %></td>
+      <td><%= task.updated_at.strftime("%Y-%m-%d %H:%M:%S") %></td>
+      <td><%= link_to "詳細" ,task %></td>
+      <td><%= link_to "更新" ,edit_task_path(task) %></td>
+      <td><%= link_to "削除", task, method: :delete, data: { confirm: "本当に削除しますか？" } %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
